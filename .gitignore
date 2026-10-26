@@ -30,3 +30,5 @@ Thumbs.db
 dist/
 dist-ssr/
 build/
+
+.claude
