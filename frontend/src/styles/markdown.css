@@ -171,28 +171,123 @@
   white-space: pre;
 }
 
-.markdown-body table {
+/* ==========================================================================
+   Markdown Tables — Scrollable, Themed, Midnight Plum + Lavender
+   ==========================================================================
+   .markdown-table-wrapper is injected by the custom `table` renderer in
+   ChatMessage.jsx. It provides horizontal scroll on narrow viewports without
+   breaking the chat bubble layout.
+   ========================================================================== */
+
+.markdown-table-wrapper {
   width: 100%;
-  border-collapse: collapse;
-  margin: 0.85em 0;
-  font-size: 0.88rem;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  margin: 0.9em 0;
+  box-shadow: 0 2px 12px var(--accent-glow);
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-border) transparent;
 }
 
-.markdown-body th,
-.markdown-body td {
-  border: 1px solid var(--border-medium);
-  padding: 0.5rem 0.75rem;
-  text-align: left;
+.markdown-table-wrapper::-webkit-scrollbar {
+  height: 5px;
+}
+.markdown-table-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+.markdown-table-wrapper::-webkit-scrollbar-thumb {
+  background: var(--accent-border);
+  border-radius: var(--radius-full);
+}
+
+.markdown-body .markdown-table-wrapper table,
+.markdown-body table {
+  width: 100%;
+  min-width: 420px;
+  border-collapse: collapse;
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .markdown-body th {
   background: var(--bg-surface-secondary);
+  color: var(--accent-primary);
   font-weight: 600;
-  color: var(--text-primary);
+  font-size: 0.82rem;
+  letter-spacing: 0.025em;
+  padding: 0.6rem 0.9rem;
+  text-align: left;
+  border-bottom: 2px solid var(--accent-border);
+  border-left: none;
+  border-right: none;
+  white-space: nowrap;
 }
 
-.markdown-body tr:nth-child(even) td {
+.markdown-body th + th {
+  border-left: 1px solid var(--border-subtle);
+}
+
+.markdown-body td {
+  padding: 0.55rem 0.9rem;
+  text-align: left;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+  border-left: none;
+  border-right: none;
+  vertical-align: top;
+}
+
+.markdown-body td + td {
+  border-left: 1px solid var(--border-subtle);
+}
+
+.markdown-body tbody tr:nth-child(even) td {
   background: var(--accent-subtle);
+}
+
+.markdown-body tbody tr:nth-child(odd) td {
+  background: transparent;
+}
+
+.markdown-body tbody tr:last-child td {
+  border-bottom: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .markdown-body tbody tr:hover td {
+    background: var(--bg-surface-hover);
+    transition: background 0.14s ease;
+  }
+}
+
+.markdown-body td strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.markdown-body th strong {
+  color: inherit;
+}
+
+.markdown-body td a,
+.markdown-body th a {
+  color: var(--accent-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  word-break: break-all;
+}
+
+.markdown-body td code,
+.markdown-body th code {
+  font-size: 0.8em;
+  padding: 0.1em 0.35em;
+  white-space: nowrap;
 }
 
 .markdown-body hr {

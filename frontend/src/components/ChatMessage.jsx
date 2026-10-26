@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { Copy, Check, User, Bot, AlertCircle, RefreshCw, Library } from 'lucide-react';
 import { motion } from 'motion/react';
 import SourceCard from './SourceCard';
@@ -128,9 +129,17 @@ export function ChatMessage({ message, onRetry }) {
             ) : (
               <div className="markdown-body">
                 <ReactMarkdown
+                  remarkPlugins={[remarkGfm]}
                   components={{
-                    code({ inline, className, children, ...props }) {
-                      if (!inline && String(children).includes('\n')) {
+                    // ── Code blocks ──────────────────────────────────────────
+                    // react-markdown v10: inline code has no `node.children[0].value` newlines
+                    code({ node, inline, className, children, ...props }) {
+                      // Treat as block if it has a language class OR spans multiple lines
+                      const isBlock =
+                        !inline &&
+                        (className?.startsWith('language-') ||
+                          String(children).includes('\n'));
+                      if (isBlock) {
                         return (
                           <CodeBlock className={className} {...props}>
                             {children}
@@ -143,6 +152,8 @@ export function ChatMessage({ message, onRetry }) {
                         </code>
                       );
                     },
+
+                    // ── Links ────────────────────────────────────────────────
                     a({ href, children, ...props }) {
                       return (
                         <a
@@ -154,6 +165,32 @@ export function ChatMessage({ message, onRetry }) {
                           {children}
                         </a>
                       );
+                    },
+
+                    // ── Tables ───────────────────────────────────────────────
+                    // Wrap the <table> in a scrollable container so wide tables
+                    // don't overflow the chat bubble on small viewports.
+                    table({ children, ...props }) {
+                      return (
+                        <div className="markdown-table-wrapper" role="region" aria-label="Data table">
+                          <table {...props}>{children}</table>
+                        </div>
+                      );
+                    },
+                    thead({ children, ...props }) {
+                      return <thead {...props}>{children}</thead>;
+                    },
+                    tbody({ children, ...props }) {
+                      return <tbody {...props}>{children}</tbody>;
+                    },
+                    tr({ children, ...props }) {
+                      return <tr {...props}>{children}</tr>;
+                    },
+                    th({ children, ...props }) {
+                      return <th {...props}>{children}</th>;
+                    },
+                    td({ children, ...props }) {
+                      return <td {...props}>{children}</td>;
                     },
                   }}
                 >
