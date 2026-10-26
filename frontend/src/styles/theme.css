@@ -1,0 +1,170 @@
+/* ==========================================================================
+   WCE Campus Assistant — Midnight Plum & Lavender Theme System
+   ========================================================================== */
+
+:root {
+  /* Common typography and layout metrics */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Header & Navigation */
+  --header-height: 68px;
+  --sidebar-width: 290px;
+  --max-content-width: 860px;
+}
+
+/* --------------------------------------------------------------------------
+   DARK THEME (Default Midnight Plum)
+   -------------------------------------------------------------------------- */
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Backgrounds & Surfaces */
+  --bg-app: #171329;
+  --bg-surface: #221c38;
+  --bg-surface-secondary: #373052;
+  --bg-surface-tertiary: #453d66;
+  --bg-surface-hover: #413961;
+  --bg-header: rgba(23, 19, 41, 0.85);
+  --bg-sidebar: #1d1833;
+  --bg-backdrop: rgba(10, 7, 18, 0.7);
+
+  /* Message Surfaces */
+  --bg-user-msg: linear-gradient(135deg, #7c58d8 0%, #633ebc 100%);
+  --text-user-msg: #ffffff;
+  --border-user-msg: rgba(167, 139, 250, 0.35);
+
+  --bg-bot-msg: #241e3d;
+  --text-bot-msg: #f0eafe;
+  --border-bot-msg: rgba(167, 139, 250, 0.16);
+
+  /* Accents & Highlights */
+  --accent-primary: #a78bfa;
+  --accent-primary-hover: #c4b5fd;
+  --accent-primary-active: #8b5cf6;
+  --accent-subtle: rgba(167, 139, 250, 0.12);
+  --accent-glow: rgba(167, 139, 250, 0.25);
+  --accent-border: rgba(167, 139, 250, 0.28);
+
+  /* Typography Colors */
+  --text-primary: #f0eafe;
+  --text-secondary: #c5bccc;
+  --text-muted: #958ba8;
+  --text-disabled: #655d78;
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(167, 139, 250, 0.14);
+  --border-medium: rgba(167, 139, 250, 0.24);
+  --border-strong: rgba(167, 139, 250, 0.45);
+
+  /* Interactive States */
+  --composer-bg: #221c38;
+  --composer-border: rgba(167, 139, 250, 0.25);
+  --composer-border-focus: #a78bfa;
+  --composer-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+
+  /* Status Colors */
+  --status-online: #34d399;
+  --status-busy: #fbbf24;
+  --status-offline: #f87171;
+  --status-error-bg: rgba(248, 113, 113, 0.14);
+  --status-error-border: rgba(248, 113, 113, 0.35);
+  --status-error-text: #fca5a5;
+
+  /* Code & Pre */
+  --code-bg: #131022;
+  --code-text: #e2d9f3;
+  --code-border: rgba(167, 139, 250, 0.18);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(34, 28, 56, 0.75);
+  --glass-border: rgba(167, 139, 250, 0.18);
+  --glass-blur: blur(14px);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* --------------------------------------------------------------------------
+   LIGHT THEME (Academic Lavender & Ivory)
+   -------------------------------------------------------------------------- */
+[data-theme="light"] {
+  color-scheme: light;
+
+  /* Backgrounds & Surfaces */
+  --bg-app: #faf8ff;
+  --bg-surface: #ffffff;
+  --bg-surface-secondary: #f0eafe;
+  --bg-surface-tertiary: #e7def7;
+  --bg-surface-hover: #ede5fc;
+  --bg-header: rgba(250, 248, 255, 0.9);
+  --bg-sidebar: #f5f0fc;
+  --bg-backdrop: rgba(33, 25, 54, 0.35);
+
+  /* Message Surfaces */
+  --bg-user-msg: linear-gradient(135deg, #6d4bc3 0%, #5636a8 100%);
+  --text-user-msg: #ffffff;
+  --border-user-msg: transparent;
+
+  --bg-bot-msg: #ffffff;
+  --text-bot-msg: #211936;
+  --border-bot-msg: #e4dcf4;
+
+  /* Accents & Highlights */
+  --accent-primary: #6d4bc3;
+  --accent-primary-hover: #5b3ca8;
+  --accent-primary-active: #4a2f8c;
+  --accent-subtle: rgba(109, 75, 195, 0.08);
+  --accent-glow: rgba(109, 75, 195, 0.16);
+  --accent-border: rgba(109, 75, 195, 0.28);
+
+  /* Typography Colors */
+  --text-primary: #211936;
+  --text-secondary: #4a3e63;
+  --text-muted: #6c6284;
+  --text-disabled: #a097b3;
+
+  /* Borders & Dividers */
+  --border-subtle: #eae3f7;
+  --border-medium: #e4dcf4;
+  --border-strong: #cdbfeb;
+
+  /* Interactive States */
+  --composer-bg: #ffffff;
+  --composer-border: #dcd2f2;
+  --composer-border-focus: #6d4bc3;
+  --composer-shadow: 0 10px 25px -5px rgba(109, 75, 195, 0.08), 0 4px 10px -2px rgba(33, 25, 54, 0.05);
+
+  /* Status Colors */
+  --status-online: #10b981;
+  --status-busy: #f59e0b;
+  --status-offline: #ef4444;
+  --status-error-bg: #fef2f2;
+  --status-error-border: #fecaca;
+  --status-error-text: #b91c1c;
+
+  /* Code & Pre */
+  --code-bg: #f1ecf9;
+  --code-text: #2f2348;
+  --code-border: #ded5ee;
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.82);
+  --glass-border: rgba(228, 220, 244, 0.85);
+  --glass-blur: blur(14px);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(33, 25, 54, 0.05);
+  --shadow-md: 0 8px 24px rgba(33, 25, 54, 0.08);
+  --shadow-lg: 0 16px 40px rgba(33, 25, 54, 0.12);
+}
