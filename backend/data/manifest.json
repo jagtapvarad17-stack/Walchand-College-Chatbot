@@ -1,0 +1,229 @@
+{
+  "version": "2.0",
+  "last_run": "2026-11-01T16:04:11.324885Z",
+  "stats": {
+    "total_urls_supplied": 20,
+    "urls_crawled_successfully": 24,
+    "urls_failed": 0,
+    "screenshots_processed": 0,
+    "documents_indexed": 36
+  },
+  "urls": {
+    "https://walchandsangli.ac.in/": {
+      "target_url": "https://walchandsangli.ac.in/",
+      "final_url": "https://walchandsangli.ac.in/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 526556,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/admissions/first-year-btech/": {
+      "target_url": "https://walchandsangli.ac.in/admissions/first-year-btech/",
+      "final_url": "https://walchandsangli.ac.in/admissions/first-year-btech/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 273760,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/admissions/first-year-of-btech-pio-oci-fn-ciwg-nri-students/": {
+      "target_url": "https://walchandsangli.ac.in/admissions/first-year-of-btech-pio-oci-fn-ciwg-nri-students/",
+      "final_url": "https://walchandsangli.ac.in/admissions/first-year-of-btech-pio-oci-fn-ciwg-nri-students/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 267826,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/admissions/direct-second-year-b-tech/": {
+      "target_url": "https://walchandsangli.ac.in/admissions/direct-second-year-b-tech/",
+      "final_url": "https://walchandsangli.ac.in/admissions/direct-second-year-b-tech/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 267203,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/admissions/btech-dse-working-professionals/": {
+      "target_url": "https://walchandsangli.ac.in/admissions/btech-dse-working-professionals/",
+      "final_url": "https://walchandsangli.ac.in/admissions/btech-dse-working-professionals/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 254156,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/department-of-mechanical-engineering/overview/": {
+      "target_url": "https://walchandsangli.ac.in/department-of-mechanical-engineering/overview/",
+      "final_url": "https://walchandsangli.ac.in/department-of-mechanical-engineering/overview/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 280618,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/department-of-mechanical-engineering/b-tech-curriculum-with-minors-mech/": {
+      "target_url": "https://walchandsangli.ac.in/department-of-mechanical-engineering/b-tech-curriculum-with-minors-mech/",
+      "final_url": "https://walchandsangli.ac.in/department-of-mechanical-engineering/b-tech-curriculum-with-minors-mech/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 344122,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/department-of-mechanical-engineering/m-tech-specialisations-and-curriculum-mech/": {
+      "target_url": "https://walchandsangli.ac.in/department-of-mechanical-engineering/m-tech-specialisations-and-curriculum-mech/",
+      "final_url": "https://walchandsangli.ac.in/department-of-mechanical-engineering/m-tech-specialisations-and-curriculum-mech/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 370743,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/department-of-mechanical-engineering/faculty-mech/": {
+      "target_url": "https://walchandsangli.ac.in/department-of-mechanical-engineering/faculty-mech/",
+      "final_url": "https://walchandsangli.ac.in/department-of-mechanical-engineering/faculty-mech/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 259637,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/department-of-mechanical-engineering/achievements-mech/": {
+      "target_url": "https://walchandsangli.ac.in/department-of-mechanical-engineering/achievements-mech/",
+      "final_url": "https://walchandsangli.ac.in/department-of-mechanical-engineering/achievements-mech/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 271618,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/department-of-information-technology/overview-it/": {
+      "target_url": "https://walchandsangli.ac.in/department-of-information-technology/overview-it/",
+      "final_url": "https://walchandsangli.ac.in/department-of-information-technology/overview-it/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 271088,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/department-of-information-technology/b-tech-curriculum-with-minors-it/": {
+      "target_url": "https://walchandsangli.ac.in/department-of-information-technology/b-tech-curriculum-with-minors-it/",
+      "final_url": "https://walchandsangli.ac.in/department-of-information-technology/b-tech-curriculum-with-minors-it/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 339165,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/department-of-information-technology/m-tech-specialisations-and-curriculum-it/": {
+      "target_url": "https://walchandsangli.ac.in/department-of-information-technology/m-tech-specialisations-and-curriculum-it/",
+      "final_url": "https://walchandsangli.ac.in/department-of-information-technology/m-tech-specialisations-and-curriculum-it/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 319648,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/department-of-information-technology/academic-planning-activities-it/": {
+      "target_url": "https://walchandsangli.ac.in/department-of-information-technology/academic-planning-activities-it/",
+      "final_url": "https://walchandsangli.ac.in/department-of-information-technology/academic-planning-activities-it/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 266509,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/department-of-information-technology/resources-it/": {
+      "target_url": "https://walchandsangli.ac.in/department-of-information-technology/resources-it/",
+      "final_url": "https://walchandsangli.ac.in/department-of-information-technology/resources-it/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 281078,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/department-of-information-technology/faculty-it/": {
+      "target_url": "https://walchandsangli.ac.in/department-of-information-technology/faculty-it/",
+      "final_url": "https://walchandsangli.ac.in/department-of-information-technology/faculty-it/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 259540,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/department-of-information-technology/students-development-it/": {
+      "target_url": "https://walchandsangli.ac.in/department-of-information-technology/students-development-it/",
+      "final_url": "https://walchandsangli.ac.in/department-of-information-technology/students-development-it/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 256437,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/department-of-computer-engineering/overview/": {
+      "target_url": "https://walchandsangli.ac.in/department-of-computer-engineering/overview/",
+      "final_url": "https://walchandsangli.ac.in/department-of-computer-engineering/overview/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 263735,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/department-of-computer-engineering/b-tech-curriculum/": {
+      "target_url": "https://walchandsangli.ac.in/department-of-computer-engineering/b-tech-curriculum/",
+      "final_url": "https://walchandsangli.ac.in/department-of-computer-engineering/b-tech-curriculum/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 268698,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/department-of-computer-engineering/faculty/": {
+      "target_url": "https://walchandsangli.ac.in/department-of-computer-engineering/faculty/",
+      "final_url": "https://walchandsangli.ac.in/department-of-computer-engineering/faculty/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 264055,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/student-careers/career-development-cell/placement-in-wce/": {
+      "target_url": "https://walchandsangli.ac.in/student-careers/career-development-cell/placement-in-wce/",
+      "final_url": "https://walchandsangli.ac.in/student-careers/career-development-cell/placement-in-wce/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 295196,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/student-careers/career-development-cell/trainings/": {
+      "target_url": "https://walchandsangli.ac.in/student-careers/career-development-cell/trainings/",
+      "final_url": "https://walchandsangli.ac.in/student-careers/career-development-cell/trainings/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 272572,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/student-careers/career-development-cell/internships/": {
+      "target_url": "https://walchandsangli.ac.in/student-careers/career-development-cell/internships/",
+      "final_url": "https://walchandsangli.ac.in/student-careers/career-development-cell/internships/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 260834,
+      "error": null
+    },
+    "https://walchandsangli.ac.in/student-careers/career-development-cell/higher-education/": {
+      "target_url": "https://walchandsangli.ac.in/student-careers/career-development-cell/higher-education/",
+      "final_url": "https://walchandsangli.ac.in/student-careers/career-development-cell/higher-education/",
+      "status_code": 200,
+      "redirected": false,
+      "elapsed_sec": 0.01,
+      "size_bytes": 268819,
+      "error": null
+    }
+  }
+}
