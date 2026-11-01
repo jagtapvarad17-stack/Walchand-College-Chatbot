@@ -5,11 +5,35 @@
 const path = require('path');
 
 const SEED_URLS = [
+  // A. Homepage
   'https://walchandsangli.ac.in/',
-  'https://walchandsangli.ac.in/admissions/',
-  'https://walchandsangli.ac.in/campus-life/departments/',
-  'https://walchandsangli.ac.in/academics-programmes/calendars-and-schedules/',
-  'https://walchandsangli.ac.in/notices/',
+  // B. Admissions
+  'https://walchandsangli.ac.in/admissions/first-year-btech/',
+  'https://walchandsangli.ac.in/admissions/first-year-of-btech-pio-oci-fn-ciwg-nri-students/',
+  'https://walchandsangli.ac.in/admissions/direct-second-year-b-tech/',
+  'https://walchandsangli.ac.in/admissions/btech-dse-working-professionals/',
+  // C. Mechanical Engineering Department
+  'https://walchandsangli.ac.in/department-of-mechanical-engineering/overview/',
+  'https://walchandsangli.ac.in/department-of-mechanical-engineering/b-tech-curriculum-with-minors-mech/',
+  'https://walchandsangli.ac.in/department-of-mechanical-engineering/m-tech-specialisations-and-curriculum-mech/',
+  'https://walchandsangli.ac.in/department-of-mechanical-engineering/faculty-mech/',
+  'https://walchandsangli.ac.in/department-of-mechanical-engineering/achievements-mech/',
+  // D. Information Technology Department
+  'https://walchandsangli.ac.in/department-of-information-technology/overview-it/',
+  'https://walchandsangli.ac.in/department-of-information-technology/b-tech-curriculum-with-minors-it/',
+  'https://walchandsangli.ac.in/department-of-information-technology/m-tech-specialisations-and-curriculum-it/',
+  'https://walchandsangli.ac.in/department-of-information-technology/academic-planning-activities-it/',
+  'https://walchandsangli.ac.in/department-of-information-technology/resources-it/',
+  'https://walchandsangli.ac.in/department-of-information-technology/faculty-it/',
+  'https://walchandsangli.ac.in/department-of-information-technology/students-development-it/',
+  // E. Computer Engineering Department
+  'https://walchandsangli.ac.in/department-of-computer-engineering/overview/',
+  'https://walchandsangli.ac.in/department-of-computer-engineering/b-tech-curriculum/',
+  'https://walchandsangli.ac.in/department-of-computer-engineering/faculty/',
+  // Career Development / Placement
+  'https://walchandsangli.ac.in/student-careers/career-development-cell/placement-in-wce/',
+  'https://walchandsangli.ac.in/student-careers/career-development-cell/trainings/',
+  'https://walchandsangli.ac.in/student-careers/career-development-cell/internships/',
 ];
 
 const ALLOWED_DOMAINS = [
@@ -52,8 +76,8 @@ module.exports = {
   POLITE_DELAY_MS: 700,
   REQUEST_TIMEOUT_MS: 15000,
   MAX_RETRIES: 2,
-  DEFAULT_MAX_PAGES: 30,
-  DEFAULT_MAX_DEPTH: 2,
+  DEFAULT_MAX_PAGES: 40,
+  DEFAULT_MAX_DEPTH: 1,
 
   // Payload size constraints
   MAX_HTML_BYTES: 5 * 1024 * 1024,   // 5MB

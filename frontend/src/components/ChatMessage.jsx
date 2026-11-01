@@ -154,16 +154,12 @@ export function ChatMessage({ message, onRetry }) {
                     },
 
                     // ── Links ────────────────────────────────────────────────
+                    // Render links as plain text without clickable anchors
                     a({ href, children, ...props }) {
                       return (
-                        <a
-                          href={href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          {...props}
-                        >
+                        <span className="plain-text-inline" {...props}>
                           {children}
-                        </a>
+                        </span>
                       );
                     },
 
